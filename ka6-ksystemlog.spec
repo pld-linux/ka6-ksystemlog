@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.04.0
+%define		kdeappsver	25.04.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		ksystemlog
 Summary:	ksystemlog
 Name:		ka6-%{kaname}
-Version:	25.04.0
+Version:	25.04.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	021ec2e57e071f885e5f06b4bb57857c
+# Source0-md5:	11072e846458f14964526610de6fec9d
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel
 BuildRequires:	Qt6Core-devel >= %{qtver}
