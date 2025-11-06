@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		ksystemlog
 Summary:	ksystemlog
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	11f672bb1c42b19d07d51a60ca7c2634
+# Source0-md5:	1b78a8bf401bce88a8a1e857d8ebbe63
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel
 BuildRequires:	Qt6Core-devel >= %{qtver}
@@ -55,8 +55,8 @@ Linux system, and don't know where log files are.
 %description -l pl.UTF-8
 KSystemLog jest przeglądarką logów systemowych. Program jest
 przeznaczony głównie dla początkujących użytkowników, którzy nie
-wiedzą jak znaleźć informacje o ich Linuksie, ani nie wiedzą, gdzie
-są logi.
+wiedzą jak znaleźć informacje o ich Linuksie, ani nie wiedzą, gdzie są
+logi.
 
 %prep
 %setup -q -n %{kaname}-%{version}
